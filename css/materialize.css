@@ -4,6 +4,8 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 
+
+
 #modal1{
   
 
@@ -648,8 +650,8 @@
   color: #304ffe !important;
 }
 
-.blue {
-  background-color: #2196F3 !important;
+.pink {
+  background-color: #FFE4E1 !important;
 }
 
 .blue-text {
@@ -2128,8 +2130,8 @@
   color: #000000 !important;
 }
 
-.white {
-  background-color: #FFFFFF !important;
+.blue {
+  background-color: #191970 !important;
 }
 
 .white-text {
@@ -2416,6 +2418,7 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  color:white;
   /* 2 */
 }
 
@@ -2609,7 +2612,7 @@ ul:not(.browser-default) > li {
 }
 
 a {
-  color: #039be5;
+  color: white;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -2684,7 +2687,7 @@ a {
 .divider {
   height: 1px;
   overflow: hidden;
-  background-color: #e0e0e0;
+  background-color: #191970;
 }
 
 blockquote {
@@ -2746,7 +2749,7 @@ video.responsive-video {
 }
 
 .pagination li.active a {
-  color: #fff;
+  color: #191970;
 }
 
 .pagination li.active {
@@ -4496,6 +4499,7 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
+  background-color: #FFE4E1;
 }
 
 @media only screen and (min-width: 0) {
@@ -5252,7 +5256,12 @@ small {
   background-color: #1d7d74;
 }
 
-.btn, .btn-large, .btn-small {
+.btn, btn-Default{
+  color:white;
+
+}
+
+.btn, .btn-large, .btn-small, .btn-Default {
   text-decoration: none;
   color: #fff;
   background-color: #26a69a;

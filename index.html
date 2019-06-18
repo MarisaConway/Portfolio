@@ -7,16 +7,16 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
+  <nav class="pink" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
+      <!-- <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
-      </ul>
+      </ul> -->
 
       <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Navbar Link</a></li>
@@ -32,7 +32,8 @@
         <br><br>
         <h1 class="header center teal-text text-lighten-2">Marisa Conway</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Down and Nerdy always seeking knowledge</h5>
+          <h5 class="header col s12 light">Down and Nerdy and always seeking knowledge</h5>
+          <button type="button" class="btn btn-Default text-white"><a href="https://github.com/MarisaConway">My Github</a></button>
         </div>
     
         <br><br>
@@ -52,7 +53,7 @@
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Marisa's Resume</h4>
-      <p>Resume</p>
+      <p><img src="Marisa Conway Resume.docx"></p>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
@@ -61,12 +62,12 @@
 
       <!--   Icon Section   -->
       <br><br><br><br>
-      <div class="row">
+      <div id="projects" class="row">
         
         <div class="col s12 m4">
           <div class="icon-block">
             <h5 class="center">Activity Center</h5>
-            <img src="ActivityCenter.PNG" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+            <a href="https://github.com/MarisaConway/ActivityCenter"><button><img src="ActivityCenter.PNG" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"></button></a>
             <p class="light">A website done in C# that allows users to register and create activites as well as join/leave other users activities.</p>
           </div>
         </div>
@@ -74,7 +75,7 @@
         <div class="col s12 m4">
             <div class="icon-block">
               <h5 class="center">React Stopwatch</h5>
-              <img src="StopWatch.PNG" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+              <a href="https://github.com/MarisaConway/TimeDisplay"><button><img src="StopWatch.PNG" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"></button></a>
               <p class="light">A cool stopwatch made with React. </p>
             </div>
           </div>
@@ -82,7 +83,7 @@
         <div class="col s12 m4">
             <div class="icon-block">
               <h5 class="center">EasyGetAway</h5>
-              <img src="ActivityCenter.PNG" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+              <a href="https://github.com/MarisaConway/ActivityCenter"><button><img src="ActivityCenter.PNG" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"></button></a>
               <p class="light">A convenient website that allows users to register and create a vacation as well as join/leave other vacations that other users are planning on going on.</p>
             </div>
           </div>
@@ -97,21 +98,35 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="Sun-Flower.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
     <div class="section">
 
-      <div class="row">
+      <div id="contactMe" class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h4>Contact Me</h4>
+          <form class="form-inline" action="/action_page.php">
+            <div class="form-group">
+              
+              <input type="text" class="form-control" placeholder="Name" id="name">
+            </div>
+            <div class="form-group">
+            
+              <input type="text" class="form-control" placeholder="Email" id="email">
+            </div>
+            <div class="form-group">
+              <input type="textarea" placeholder="Comment" id="comment"> 
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button> 
+          </form>
+      
         </div>
       </div>
 
@@ -123,21 +138,21 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="venace.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
-  <footer class="page-footer teal">
+  <!-- <footer class="page-footer teal">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        <!-- <div class="col l6 s12"> -->
+          <!-- <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p> -->
 
-
+<!-- 
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Settings</h5>
@@ -147,24 +162,24 @@
             <li><a class="white-text" href="#!">Link 3</a></li>
             <li><a class="white-text" href="#!">Link 4</a></li>
           </ul>
-        </div>
+        </div> -->
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
             <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li> 
             <li><a class="white-text" href="#!">Link 3</a></li>
             <li><a class="white-text" href="#!">Link 4</a></li>
           </ul>
         </div>
       </div>
-    </div>
-    <div class="footer-copyright">
+    </div> 
+    <!-- <div class="footer-copyright">
       <div class="container">
       Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
 
   <!--  Scripts-->
